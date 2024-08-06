@@ -26,15 +26,31 @@ A coluna selecionada para ser prevista foi PRECO e os itens foram identificados 
 
 ### 3. Analisar
 
--   Após o treinamento, examine as métricas de performance do modelo.
--   Verifique as principais características que influenciam as previsões.
--   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
+![Texto Alternativo](MODELO.png)
+-   Avg. wQL (Average Weighted Quantile Loss):
+A métrica de perda quantílica ponderada média mede a diferença entre as quantis previstas e os valores reais observados.
+
+-   MAPE (Mean Absolute Percentage Error):
+ O MAPE é a média das diferenças absolutas entre os valores previstos e os valores reais, expressas como uma porcentagem dos valores reais.
+Significado: Um MAPE de 0.111 significa que, em média, as previsões do modelo estão a 11.1% de erro dos valores reais.
+
+-  WAPE (Weighted Absolute Percentage Error):
+ O WAPE é uma métrica que calcula a soma dos erros absolutos, ponderados pela soma dos valores reais. É uma variação do MAPE que ajusta a escala dos erros de acordo com os valores reais.
+Significado: Um WAPE de 0.108 significa que o erro absoluto ponderado representa 10.8% dos valores reais. Assim como o MAPE, valores menores indicam previsões mais precisas.
+
+-  RMSE (Root Mean Squared Error):
+O RMSE é a raiz quadrada da média dos erros quadrados entre as previsões e os valores reais.
+Significado: Um RMSE de 1.678 significa que, em média, o desvio padrão das previsões do modelo em relação aos valores reais é 1.678 unidades. Valores menores indicam um modelo com previsões mais precisas.
+-  MASE (Mean Absolute Scaled Error):
+O MASE é uma métrica de erro que é escalada de forma a ser independente da escala dos dados. Ele compara o erro absoluto médio do modelo com o erro absoluto médio de uma previsão baseada em uma regra simples, como a previsão por média histórica.
+Significado: Um MASE de 0.847 indica que o erro absoluto médio do modelo é 84.7% do erro de uma previsão baseada em uma regra simples. Um valor menor que 1 indica que o modelo é melhor que a previsão por média histórica.
 
 ### 4. Prever
 
 -   Use o modelo treinado para fazer previsões de estoque.
 -   Exporte os resultados e analise as previsões geradas.
 -   Documente suas conclusões e qualquer insight obtido a partir das previsões.
+-   
 
 ## 🤔 Dúvidas?
 
