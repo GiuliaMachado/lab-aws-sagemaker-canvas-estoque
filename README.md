@@ -47,10 +47,8 @@ Significado: Um MASE de 0.847 indica que o erro absoluto médio do modelo é 84.
 
 ### 4. Prever
 
--   Use o modelo treinado para fazer previsões de estoque.
--   Exporte os resultados e analise as previsões geradas.
--   Documente suas conclusões e qualquer insight obtido a partir das previsões.
--   
+![Texto Alternativo](MODELO.png)
+![Texto Alternativo](MODELO.png)
 
 ## 🤔 Dúvidas?
 
