@@ -46,10 +46,21 @@ O MASE é uma métrica de erro que é escalada de forma a ser independente da es
 Significado: Um MASE de 0.847 indica que o erro absoluto médio do modelo é 84.7% do erro de uma previsão baseada em uma regra simples. Um valor menor que 1 indica que o modelo é melhor que a previsão por média histórica.
 
 ### 4. Prever
+Só foi possível prever análises no tipo de predição Single Prediction, então foram gerados algumas análises individuais mostradas na imagem abaixo: 
+![Texto Alternativo](single_prediction_results.png)
+![Texto Alternativo](single_prediction_results_2.png)
 
-![Texto Alternativo](MODELO.png)
-![Texto Alternativo](MODELO.png)
+- Historical Demand
+É relacionado aos dados de demanda passados. Esses dados representam o histórico de vendas ou uso de um produto ou serviço ao longo do tempo. É importante essa análise para entender padrões e tendências, identificar sazonalidades, e construir modelos de previsão mais precisos. No contexto de séries temporais, a demanda histórica é usada como base para treinar modelos que podem prever demandas futuras.
 
-## 🤔 Dúvidas?
+p10, p50, p90
+Os termos p10, p50, e p90 referem-se a pontos específicos de previsões quantílicas, que são usadas para representar a incerteza nas previsões de séries temporais. Essas quantis fornecem intervalos de confiança para as previsões, ajudando a entender a faixa de possíveis valores futuros.
 
-Esperamos que esta experiência tenha sido enriquecedora e que você tenha aprendido mais sobre Machine Learning aplicado a problemas reais. Se tiver alguma dúvida, não hesite em abrir uma issue neste repositório ou entrar em contato com a equipe da DIO.
+- p10 (10th Percentile):
+Representa o valor abaixo do qual 10% das previsões são esperadas cair. Fornece um limite inferior, indicando que há uma baixa probabilidade (10%) de que a demanda real será menor do que este valor. É útil para planejamento em cenários conservadores.
+
+- p50 (50th Percentile or Median):
+É o valor mediano da previsão. Metade das previsões são esperadas estar acima deste valor e metade abaixo. é usado como a previsão central, oferecendo o valor mais provável. Ele serve como uma estimativa de ponto que equilibra o risco de subestimação e superestimação.
+- p90 (90th Percentile):
+Representa o valor abaixo do qual 90% das previsões são esperadas cair. Fornece um limite superior, indicando que há uma alta probabilidade (90%) de que a demanda real será menor do que este valor. É útil para planejamento em cenários otimistas.
+
